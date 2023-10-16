@@ -1,15 +1,15 @@
 html {
         font-family: sans-serif;
         font-size: 10px;
-	background: aqua;
+	      background: aqua;
       }
 
       h2 {
         font-size: 2rem;
-	border-radius: 5px;
-	padding: 8px;
-	background: lime;
-	width: 10%;
+      border-radius: 20px;
+      padding: 10px;
+      background: lime;
+      width: 10%;
       }
 
       ul,ol,dl,p {
@@ -33,7 +33,6 @@ html {
         background-position: 0 0;
         background-size: 1.6rem 1.6rem;
         background-repeat: no-repeat;
-	color: aqua;
       }
 
       /* Ordered list styles */
@@ -50,4 +49,10 @@ html {
 
       dt {
         font-weight: bold;
+      }
+      
+      .text {
+        background: lightblue;
+        padding: 10px;
+        border-radius:20px;
       }
