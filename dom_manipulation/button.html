@@ -3,14 +3,37 @@
     <head><title>JavaScript Button Example</title></head>
 
     <body>
-    <button id='squeeze'>Squeeze me</button>
-    
-    <script>
-     let button = document.getElementById("squeeze");
-     function shout(){
-	     alert("... and I squeak");
-     }
-     button.addEventListener("click", shout);
-    </script>
+        Adjective: <input type="text" id="adjective"><br>
+        Noun: <input type="text" id="noun"><br>
+        Verb: <input type="text" id="verb"><br>
+        Adverb: <input type="text" id="adverb"><br>
+        Use Random: <input type="checkbox" id="checkk">
+        <button id="squeeze">Squeeze me</button>
+        <script>
+        var adj = ["black", "blue", "gray", "purple"];
+        var noun = ["pencil", "eraser", "sharperner", "phone"];
+        var verb = ["falls", "drops", "flips", "breaks"];
+        var adverb = ["quickly", "slowly", ""]
+        let button = document.getElementById("squeeze");
+        function shout(){
+            if(document.getElementById("checkk").checked) {
+                var adj1 = adj[Math.floor(Math.random()*adj.length)];
+                var noun1 = noun[Math.floor(Math.random()*noun.length)];
+                var verb1 = verb[Math.floor(Math.random()*verb.length)];
+                var adverb1 = adverb[Math.floor(Math.random()*adverb.length)];
+                alert("The "+adj1+" "+noun1+" "+verb1+" "+adverb1);
+            } else {
+                var adj1 = document.getElementById("adjective").value;
+                var noun1 = document.getElementById("noun").value;
+                var verb1 = document.getElementById("verb").value;
+                var adverb1 = document.getElementById("adverb").value;
+                var adj1 = document.getElementById("adjective").value;
+                alert("The "+adj1+" "+noun1+" "+verb1+" "+adverb1);
+            }
+        }
+         button.addEventListener("click", shout);
+        </script>
+        
+
     </body>
 </html>
